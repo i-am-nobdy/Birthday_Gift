@@ -3,5 +3,5 @@ document.getElementById("letter").addEventListener("click", function() {
 });
 
 document.getElementById('flowers').addEventListener("click", function() {
-    window.location.href= "i am nobody/FLowers/flowers.html";
+    window.location.href= "i am nobody/Flowers/flowers.html";
 } )
