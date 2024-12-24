@@ -1,0 +1,128 @@
+body {
+    background-color: black;
+    margin: 0;
+    overflow: hidden; /* Prevent scrolling */
+    font-family: "Dancing Script", serif;
+    font-size: 20px;
+}
+
+.container {
+    background-color: rgb(224, 220, 220);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative; /* Position relative for absolute children */
+}
+
+.cover-page {
+    position: absolute;
+    background-color: pink;
+    box-shadow: 0px 5px 5px gray;
+    height: 500px;
+    width: 400px;
+    justify-content: center;
+    align-items: top;
+    display: flex;
+    transition: transform 1.2s; /* Smooth transition */
+}
+
+
+.content {
+    position: absolute;
+    background: pink;
+    box-shadow: 5px 5px 5px gray;
+    height: 500px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: transform 2s; /* Smooth transition */
+}
+
+.gif {
+    margin-bottom: 100px;
+}
+
+.open, .close {
+    background-color: red;
+    color: pink;
+    border-width: 1px;
+    border-radius: 1px;
+    border: none;
+    position: absolute;
+    margin-top: 482px;
+    margin-left: 445px;
+    transition: 1s;
+    cursor: pointer;
+    animation: fade 0.2s;
+}
+
+.open:hover, .close:hover {
+    color: red;
+    background: pink;
+}
+
+.close {
+    display: none; /* Initially hide the close button */
+}
+
+.fade-out {
+    animation: fade 0s 0.54s forwards;
+}
+
+.fade-in {
+    animation: appear 0s 0.6s forwards;
+    opacity: 0;
+}
+
+.heading {
+    position: absolute;
+    align-content: top;
+    display: block;
+}
+
+.to {
+    position: absolute;
+    margin-top: 450px;
+    margin-right: 195px;
+    font-size: 20px;
+}
+
+.by,.from {
+    position: absolute;
+    margin-top: 420px;
+}
+
+.from {
+    margin-top: 450px;
+
+}
+
+.message {
+    align-content: top;
+    margin-top: 80px;
+    font-size: 18px;
+    text-align: center;
+    width: 300px;
+}
+
+.pic {
+    position: absolute;
+    height: 250px;
+    border-width: 10px;
+    background: white;
+    transform: rotateY(180deg);
+}
+
+@keyframes fade {
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes appear {
+    to {
+        opacity: 1;
+    }
+}
