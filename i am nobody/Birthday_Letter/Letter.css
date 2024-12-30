@@ -7,7 +7,6 @@ body {
 }
 
 .container {
-    overflow-x: auto;
     background-color: rgb(224, 220, 220);
     height: 100vh;
     justify-content: center;
