@@ -9,6 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-left: 365px;
+    height: 100%;
 }
 .name {
         margin: 0;
